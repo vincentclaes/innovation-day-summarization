@@ -1,0 +1,123 @@
+But I will do the planning once off or I have to run for the next meeting. But then you don't get a a report.
+And that's what our topic is about. We want to set up a some AI model that's based upon what you discussed during the meeting can generate a report automatically so that we always have automatically reports on a meeting with the to do described.
+David Lambregs11:33
+I'm and automatically sent and that's the reason why we're recording this session at the moment, because at the beginning you thought maybe this is a weird start or the meeting. I don't understand what is babbling about. That was a bit to have a good test case because we want to use this session to make an automatic report of it and we'll present it at 4:00 o'clock to you to see how it went and what is the report that comes out of it.
+You're looking for, uh, getting these things out of the report. We want to have a list of attendees and a summary of what was discussed, but also a list of to DOS risks that were discussed and detect automatically if there was an agreement to do a follow up meeting and then automatically send out an invitation and automatically send the report to all the attendees of the meeting. You see here a number. That's our rate of success, the things that the one of the things we.
+Definitely wanna reach today.
+It wouldn't be nice if the the tools are in there as well, but for the trees we are hesitating already. If that will be possible because we need to link to some tools, but maybe it's possible or we have some ideas where the end of the day, how it can be done.
+But the throughout the day we are going to to do, treat test scenarios or wanna try try three things. One we have a recording with the transcript from a session we did yesterday on metadata. We wanna see if that's useful to do some comprehensive work on it. We will use this session to see if he picks up the todos, the risks and a comprehensive session as well. And if it's not going well we will fall back to something we wrote ourselves that we may get report to see if we can.
+Handle that. But we hope we will.
+We will make it with a with the two first Test cases.
+So I keep the recording on just to have extra material we can make a report for and if it's working fine then we we have a report at once of this session now.
+Profile picture of Speaker 1.
+Speaker 111:35
+Thank you Davids looks very promising.
+Profile picture of David Lambregs.
+David Lambregs11:35
+Or.
+No, OK, I stop sharing.
+Profile picture of Speaker 1.
+Speaker 111:35
+That was.
+That was the first team greats onto the next one and the volunteers.
+
+Tomas Mardjan11:35
+Yeah, we can do certain mlflow 1.
+Profile picture of Speaker 1.
+Speaker 111:35
+Tomas. OK, thank you.
+Profile picture of Tomas Mardjan.
+Tomas Mardjan11:35
+Share my screen.
+Visible.
+Profile picture of Speaker 1.
+Speaker 111:35
+Yes.
+Profile picture of Tomas Mardjan.
+Tomas Mardjan11:35
+Alright, so and mlflow recipes, so give a bit of context first. So this is part of M Lflow too, and previously it was called, I think M Lflow pipelines. So yeah, from documentation what's it's about the idea is it will enable data scientists to more easily and quickly develop models and also deploy to production. And I think it's obvious why that's interesting for us.
+Some other pros are. Yeah. So there are some basic templates on there, which of course facilitates everything because it reduces boilerplate.
+Also some interesting capabilities such as caching and also some facilitations for deployment, so that's a bit really short and briefly what M lflow recipes offered.
+And then what did we do so far? So, first of all.
+ 
+ 
+And mlflow recipes is all about recipes and steps, and actually it looks really similar or has similar feel, at least to the model factory. So that's also another interesting topic to see. Yeah, because of course, having something that's open source is more convenient than, yeah, maintaining it ourselves.
+So what's a recipe consists of different steps where every step is customizable, so just regular Python codes.
+And steps are for example, yeah and just so in loading the data splits train et cetera, et cetera, making predictions et cetera. And the idea is that these steps are done defined in YAML file.
+So what we did is investigate the basic example for ourselves to get better understanding how it exactly works, and also we're running everything locally and so far it seems to be working. So maybe we can only quickly show you a bit how it looks like.
+So where's the recipe animal? So this is a bit how the YAML file looks like, so we have. Here we see the steps and then we have the different steps defined in. Just split, transform train. And as mentioned those steps we can customize. So for example if you look at transform.
+Yeah, you can see that we you can create create your own custom functions methods to transform data et cetera et cetera.
+And then yeah, as mentioned, we do everything locally. So we have a local and lflow server here.
+And this is already first look of the results of these different steps. So it actually out-of-the-box creates these.
+So if you run steps, you can always look at each step a bit more in detail. So for example here the interest step we can look at the scheme of data.
+Bits are already a couple of rows of data.
+Etcetera, etcetera. And you can do that basically for every step. So for example splits you can see what it actually how many train, how many validation tests for transform step. We can see that also the actual model objects is stored.
+So yeah, a lot of interesting stuff that comes out of box and we will investigate further in the afternoon and give you a bit more of details then. So now we run through and basic example that's already there and now we're going to look into more how easily this to customize the different steps and add additional features.
+Yeah. To see how convenient it actually is. So for now it looks really promising. But of course, if you need to customize, it might be that you bump into limitations. So that's it for us. Thank you.
+Profile picture of Speaker 1.
+Speaker 111:40
+Thank you, Tomas. Again, another very promising topic I think.
+Next up.
+Two left volunteers.
+ 
+Dimitri Pfeiffer11:40
+Yes. Yeah. Ohh Yep. So I don't have slides. Sorry for that. We've been working on the contest store exploring what it can do for us. So in a nutshell think of contact store as a what M Lflow does for model contest, what does it for you conda environments. So it helps you keeping them in track and storing them, hence the name and reusing them.
+Profile picture of Speaker 1.
+Speaker 111:40
+Dimitri.
+Profile picture of Dimitri Pfeiffer.
+Dimitri Pfeiffer11:40
+Ohm. So what we've been doing?
+Ohh, we split in two trucks. 1 Truck was looking into running its locally as a. The other team did to really get a sense of the the features and try to get to a book as fast as possible and the other half of the team was looking into how we can actually productionized it and deploy it into the Edison context.
+Uh, unfortunately, both teams came to an abrupt failure, I would say, and we discovered that the tool is not that mature differently, both in terms of documentation, the actual tooling, and yeah, we've basically failed running it locally so far.
+One finding we we did make is that it doesn't work out-of-the-box with Nexus channels. So if we want to actually use it, we will have to open a PR and make some changes to the codes because right now it only works with a Anaconda.
+Uh, so to speak.
+So what we planned for the afternoon is well.
+Keep the keep pursuing this and definitely try to get something running locally, at least to showcase a bit of it, hopefully.
+Profile picture of Speaker 1.
+Speaker 111:42
+Right. Uh, yeah, feeding you guys.
+We'll make it work.
+Profile picture of Dimitri Pfeiffer.
+Dimitri Pfeiffer11:42
+Thank you.
+Profile picture of Speaker 1.
+Speaker 111:42
+Thank you very much.
+And then the last team.
+ 
+Thiago Alves11:42
+Yes, uh, it's Cedric and I we are working on Kida. So just to explain, ohh what we are trying to solve.
+Currently only on DEV I'll be instance. I'm talking so this is the the bots that we are running on Dev in the cabernets cluster.
+For ML flow, so we see here that we have 123.
+M Lflow instances and that's the same for Jupyter hub. We have 123 Jupyter hub instances running, but we don't have users on all these instances. So why do we have all these spots running 24/7?
+Uh, so that's the same for jupyterhub, M lflow and spark history. And we also have the proxies for this tools.
+So there's a possible solution for that, which is kiddo and the idea of kieda is to based on events and metrics it scales up and down the deployments of the these instances. For example the jupyterhub instance.
+So.
+And by scaling up and down I mean that it cannot even go to 0, so it can scale to 0 this.
+Uh, this instances.
+By default, KETA has many events sources that it can use as an input. So when you can define metrics for this different event sources and based on these metrics you can do the scaling, it does not have by default and HTTP events source and and the HTTP event source is what we need. So if a user is not currently.
+Interacting with the Docker hub instance, for example. Then we can yeah scale down to zero this deployment. But there is a.
+ 
+There's an add-on.
+There's this HTTP add-on for Kida and this is what we are trying to use today. We see in this in this GitHub report that they yeah, they are still working on this.
+Uh on this add-on, but if it works, it's quite promising because then we can use just the amount of we can have running just the amount of instances that we really need.
+So this is what you are trying to use today.
+And the idea is basically if you don't have HTTP request committing you.
+At this add-on, will just.
+ 
+ 
+He stopped the.
+ 
+And the deployment, uh, what we have done so far, we try to run locally using minicube on Mac, but we had issues because we are running on botman.
+Yeah, Cedric spent quite some time and me to train it to get that running. That didn't work. So we created a Nikias cluster, not unicast, because this Linode is not AWS. So we created a Kubernetes cluster here on Linode and we managed to get a.
+Keto working here. Now we are going to try to just install any deployment and see if Canada can scale up and down based on the requests. This is what we have for the afternoon.
+Not sure if we will be able to use this getter in production so far because it's still on as a beta tool, but for the future, yeah, it's gonna be promising.
+That's it for now.
+Profile picture of Speaker 1.
+Speaker 111:46
+Again, so it's very promising. Thank you, guys. Just Thiago and Cedric, I think, yeah.
+Yeah, it's very, very interesting. We've covered 4 topics so far that for those wondering, there was a 50s morning. They won't be joining this meeting, but you'll get all the updates from them from the platform team that they said they'll be next and they were demo meeting at 4:00 o'clock.
+You see that it's still quite early. I was about you invite everyone to lunch, but it's 1146.
+Yeah, because beating the queues doesn't hurt. So yeah, whoever is in love and then wants to join for lunch. You're welcome.
+And for the rest of you, I'll hear from you again, either on the floor here or at 4:00 in the afternoon.

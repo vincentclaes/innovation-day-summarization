@@ -1,0 +1,26 @@
+
+Dimitri Pfeiffer11:40
+Yes. Yeah. Ohh Yep. So I don't have slides. Sorry for that. We've been working on the contest store exploring what it can do for us. So in a nutshell think of contact store as a what M Lflow does for model contest, what does it for you conda environments. So it helps you keeping them in track and storing them, hence the name and reusing them.
+Profile picture of Speaker 1.
+Speaker 111:40
+Dimitri.
+Profile picture of Dimitri Pfeiffer.
+Dimitri Pfeiffer11:40
+Ohm. So what we've been doing?
+Ohh, we split in two trucks. 1 Truck was looking into running its locally as a. The other team did to really get a sense of the the features and try to get to a book as fast as possible and the other half of the team was looking into how we can actually productionized it and deploy it into the Edison context.
+Uh, unfortunately, both teams came to an abrupt failure, I would say, and we discovered that the tool is not that mature differently, both in terms of documentation, the actual tooling, and yeah, we've basically failed running it locally so far.
+One finding we we did make is that it doesn't work out-of-the-box with Nexus channels. So if we want to actually use it, we will have to open a PR and make some changes to the codes because right now it only works with a Anaconda.
+Uh, so to speak.
+So what we planned for the afternoon is well.
+Keep the keep pursuing this and definitely try to get something running locally, at least to showcase a bit of it, hopefully.
+Profile picture of Speaker 1.
+Speaker 111:42
+Right. Uh, yeah, feeding you guys.
+We'll make it work.
+Profile picture of Dimitri Pfeiffer.
+Dimitri Pfeiffer11:42
+Thank you.
+Profile picture of Speaker 1.
+Speaker 111:42
+Thank you very much.
+And then the last team.

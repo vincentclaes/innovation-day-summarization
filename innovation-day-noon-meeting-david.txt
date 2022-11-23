@@ -1,0 +1,22 @@
+But I will do the planning once off or I have to run for the next meeting. But then you don't get a a report.
+And that's what our topic is about. We want to set up a some AI model that's based upon what you discussed during the meeting can generate a report automatically so that we always have automatically reports on a meeting with the to do described.
+David Lambregs11:33
+I'm and automatically sent and that's the reason why we're recording this session at the moment, because at the beginning you thought maybe this is a weird start or the meeting. I don't understand what is babbling about. That was a bit to have a good test case because we want to use this session to make an automatic report of it and we'll present it at 4:00 o'clock to you to see how it went and what is the report that comes out of it.
+You're looking for, uh, getting these things out of the report. We want to have a list of attendees and a summary of what was discussed, but also a list of to DOS risks that were discussed and detect automatically if there was an agreement to do a follow up meeting and then automatically send out an invitation and automatically send the report to all the attendees of the meeting. You see here a number. That's our rate of success, the things that the one of the things we.
+Definitely wanna reach today.
+It wouldn't be nice if the the tools are in there as well, but for the trees we are hesitating already. If that will be possible because we need to link to some tools, but maybe it's possible or we have some ideas where the end of the day, how it can be done.
+But the throughout the day we are going to to do, treat test scenarios or wanna try try three things. One we have a recording with the transcript from a session we did yesterday on metadata. We wanna see if that's useful to do some comprehensive work on it. We will use this session to see if he picks up the todos, the risks and a comprehensive session as well. And if it's not going well we will fall back to something we wrote ourselves that we may get report to see if we can.
+Handle that. But we hope we will.
+We will make it with a with the two first Test cases.
+So I keep the recording on just to have extra material we can make a report for and if it's working fine then we we have a report at once of this session now.
+Profile picture of Speaker 1.
+Speaker 111:35
+Thank you Davids looks very promising.
+Profile picture of David Lambregs.
+David Lambregs11:35
+Or.
+No, OK, I stop sharing.
+Profile picture of Speaker 1.
+Speaker 111:35
+That was.
+That was the first team greats onto the next one and the volunteers.

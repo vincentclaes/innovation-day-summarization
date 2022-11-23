@@ -1,0 +1,35 @@
+Thiago Alves11:42
+Yes, uh, it's Cedric and I we are working on Kida. So just to explain, ohh what we are trying to solve.
+Currently only on DEV I'll be instance. I'm talking so this is the the bots that we are running on Dev in the cabernets cluster.
+For ML flow, so we see here that we have 123.
+M Lflow instances and that's the same for Jupyter hub. We have 123 Jupyter hub instances running, but we don't have users on all these instances. So why do we have all these spots running 24/7?
+Uh, so that's the same for jupyterhub, M lflow and spark history. And we also have the proxies for this tools.
+So there's a possible solution for that, which is kiddo and the idea of kieda is to based on events and metrics it scales up and down the deployments of the these instances. For example the jupyterhub instance.
+So.
+And by scaling up and down I mean that it cannot even go to 0, so it can scale to 0 this.
+Uh, this instances.
+By default, KETA has many events sources that it can use as an input. So when you can define metrics for this different event sources and based on these metrics you can do the scaling, it does not have by default and HTTP events source and and the HTTP event source is what we need. So if a user is not currently.
+Interacting with the Docker hub instance, for example. Then we can yeah scale down to zero this deployment. But there is a.
+ 
+There's an add-on.
+There's this HTTP add-on for Kida and this is what we are trying to use today. We see in this in this GitHub report that they yeah, they are still working on this.
+Uh on this add-on, but if it works, it's quite promising because then we can use just the amount of we can have running just the amount of instances that we really need.
+So this is what you are trying to use today.
+And the idea is basically if you don't have HTTP request committing you.
+At this add-on, will just.
+ 
+ 
+He stopped the.
+ 
+And the deployment, uh, what we have done so far, we try to run locally using minicube on Mac, but we had issues because we are running on botman.
+Yeah, Cedric spent quite some time and me to train it to get that running. That didn't work. So we created a Nikias cluster, not unicast, because this Linode is not AWS. So we created a Kubernetes cluster here on Linode and we managed to get a.
+Keto working here. Now we are going to try to just install any deployment and see if Canada can scale up and down based on the requests. This is what we have for the afternoon.
+Not sure if we will be able to use this getter in production so far because it's still on as a beta tool, but for the future, yeah, it's gonna be promising.
+That's it for now.
+Profile picture of Speaker 1.
+Speaker 111:46
+Again, so it's very promising. Thank you, guys. Just Thiago and Cedric, I think, yeah.
+Yeah, it's very, very interesting. We've covered 4 topics so far that for those wondering, there was a 50s morning. They won't be joining this meeting, but you'll get all the updates from them from the platform team that they said they'll be next and they were demo meeting at 4:00 o'clock.
+You see that it's still quite early. I was about you invite everyone to lunch, but it's 1146.
+Yeah, because beating the queues doesn't hurt. So yeah, whoever is in love and then wants to join for lunch. You're welcome.
+And for the rest of you, I'll hear from you again, either on the floor here or at 4:00 in the afternoon.
