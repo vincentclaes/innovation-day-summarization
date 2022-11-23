@@ -1,1 +1,3 @@
-# innovation-day-summarization
+# Innovation Day Summarization
+
+checkout out [summarization.ipynb](./summarization.ipynb)
